@@ -10,24 +10,18 @@ function App() {
     <>
       <div>
         <a target="_blank">
-          <img src={pyraSword} className="logo" alt="Pyra Sword" />
+          <img src={pyraSword} className="sword" alt="Pyra Sword" />
         </a>
         <a target="_blank">
-          <img src={mythraSword} className="logo react" alt="Mythra Sword" />
+          <img src={mythraSword} className="sword mythra" alt="Mythra Sword" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1>Pyra + Mythra</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
