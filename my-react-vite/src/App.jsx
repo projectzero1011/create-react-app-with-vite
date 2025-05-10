@@ -19,8 +19,14 @@ function App() {
       <h1>Pyra + Mythra</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+          +1
         </button>
+        <button onClick={() => setCount((count) => count - 1)}>
+          -1
+        </button>
+        <h2>
+          {count}
+        </h2>
       </div>
     </>
   )
