@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import mythraSword from './assets/mythra.png'
 import pyraSword from './assets/pyra.png'
 import './App.css'
 
@@ -9,11 +9,11 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://vite.dev" target="_blank">
+        <a target="_blank">
           <img src={pyraSword} className="logo" alt="Pyra Sword" />
         </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+        <a target="_blank">
+          <img src={mythraSword} className="logo react" alt="Mythra Sword" />
         </a>
       </div>
       <h1>Vite + React</h1>
