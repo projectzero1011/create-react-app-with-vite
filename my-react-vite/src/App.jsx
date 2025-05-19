@@ -3,9 +3,7 @@ import mythraSword from './assets/mythra.png'
 import pyraSword from './assets/pyra.png'
 import './App.css'
 
-function clamp(n) {
-  return n < 0 ? 0 : n;
-}
+function clamp(n) { return n < 0 ? 0 : n; }
 
 function App() {
   const [count, setCount] = useState(0);
