@@ -3,8 +3,12 @@ import mythraSword from './assets/mythra.png'
 import pyraSword from './assets/pyra.png'
 import './App.css'
 
+function clamp(n) {
+  return n < 0 ? 0 : n;
+}
+
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -18,11 +22,11 @@ function App() {
       </div>
       <h1>Pyra + Mythra</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          +1
+        <button onClick={() => setCount(c => clamp(c + 1))}>
+          +
         </button>
-        <button onClick={() => setCount((count) => count - 1)}>
-          -1
+        <button onClick={() => setCount(c => clamp(c - 1))}>
+          -
         </button>
         <h2>
           {count}
